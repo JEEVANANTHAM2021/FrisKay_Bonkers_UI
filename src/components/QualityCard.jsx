@@ -4,50 +4,94 @@ import { assets } from '../assets/assets'
 
 const QualityCard = () => {
   return (
-    <section className='h-auto'>
-        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 items-center justify-center mt-6 gap-4 md:gap-6'>
-        <div className='w-full h-80 rounded-3xl shadow-md flex flex-col items-center p-4 md:p-8 bg-[#FFEBC3]'>
-            <h3 className='absoulte px-3 py-3 rounded-sm bg-amber-200 z-10'>WOW!</h3>
-            <p className='relative uppercase text-center font-bold text-4xl text-white'>They Abosultely Love These Treats!</p>
-            <span></span>
-        </div>
-        
-        <div className='md:w-full md:h-80 h-80 w-full rounded-3xl shadow-md flex flex-col p-4 md:p-8 bg-[#FFEBC3]'>
-            <h3 className='absoulte px-3 py-3 rounded-sm bg-amber-200 z-10'>CATS FAVE!</h3>
-            <p className='uppercase text-center font-bold text-4xl'>Demolished In Seconds, Now a weekly Purchase</p>
-            <span></span>
+    <section className="w-full px-4 md:px-8 lg:px-16 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Card 1 */}
+        <div className="min-h-340px sm:min-h-360px md:min-h-380px rounded-3xl shadow-md flex flex-col items-center justify-between p-20 bg-[#FFEBC3] text-center">
+          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-3 md:translate-y-7 rotate-5">
+            WOW!
+          </h3>
+          <p className="uppercase font-bold text-3xl sm:text-2xl md:text-3xl text-white z-50">
+            They Absolutely Love These Treats!
+          </p>
+          <div className="flex gap-1 text-2xl sm:text-3xl">
+            ⭐⭐⭐⭐⭐
+          </div>
         </div>
 
-        <div className='w-full h-80 rounded-3xl shadow-md flex flex-col p-4 md:p-8 bg-[#FFEBC3]'>
-            <h3 className='absoulte px-3 py-3 rounded-sm bg-amber-200 z-10'>WENT BONKERS</h3>
-            <p className='uppercase text-center font-bold text-4xl'>They are now addicted to Bonkers</p>
-            <span></span>
-       </div>
-       </div>
-       {/* ------------- Textation Motion---------------- */}
-       <Textation className='bg-white rounded-b-2xl shadow-2xl flex p-2 gap-6 md:gap-12
-                    w-max whitespace-nowrap animate-[ticker-ltr_12s_linear_infinite] items-center'>
-            <img className='object-cover' src={assets.amazon_img} alt="" />
-            <img className='object-cover' src={assets.chewy_img} alt="" />
-            <img className='object-cover' src={assets.cvs_img} alt="" />
-            <img className='object-cover' src={assets.meijer_img} alt="" />
-            <img className='object-cover' src={assets.petco_img} alt="" />
-            <img className='object-cover' src={assets.petsmart_img} alt="" />
-            <img className='object-cover' src={assets.target_img} alt="" />
-            <img className='object-cover' src={assets.walgreens_img} alt="" />
-            <img className='object-cover' src={assets.walmart_img} alt="" />
+        {/* Card 2 */}
+        <div className="min-h-340px sm:min-h-360px md:min-h-380px rounded-3xl shadow-md flex flex-col items-center justify-between p-20 bg-[#FFEBC3] text-center">
+          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-y-2 rotate-5 ">
+            CATS FAVE!
+          </h3>
+          <p className="uppercase font-bold text-3xl sm:text-2xl md:text-3xl text-white z-50">
+            Demolished In Seconds, Now a Weekly Purchase
+          </p>
+          <div className="flex gap-1 text-2xl sm:text-3xl">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
 
-        {/* ---------------- Duplicate images --------------- */}
-            <img className='object-cover' src={assets.amazon_img} alt="" />
-            <img className='object-cover' src={assets.chewy_img} alt="" />
-            <img className='object-cover' src={assets.cvs_img} alt="" />
-            <img className='object-cover' src={assets.meijer_img} alt="" />
-            <img className='object-cover' src={assets.petco_img} alt="" />
-            <img className='object-cover' src={assets.petsmart_img} alt="" />
-            <img className='object-cover' src={assets.target_img} alt="" />
-            <img className='object-cover' src={assets.walgreens_img} alt="" />
-            <img className='object-cover' src={assets.walmart_img} alt="" />
-       </Textation>
+        {/* Card 3 */}
+        <div className="min-h-340px sm:min-h-360px md:min-h-380px rounded-3xl shadow-md flex flex-col items-center justify-between p-20 bg-[#FFEBC3] text-center">
+          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-3 md:translate-y-7 rotate-5">
+            WENT BONKERS
+          </h3>
+          <p className="uppercase font-bold text-3xl sm:text-2xl md:text-3xl text-white z-50">
+            They Are Now Addicted To Bonkers
+          </p>
+          <div className="flex gap-1 text-2xl sm:text-3xl">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+
+      </div>
+
+      {/* ---------- Textation Motion ---------- */}
+      <div className="mt-10 overflow-hidden">
+        <Textation className="bg-white rounded-2xl shadow-xl flex items-center gap-8 md:gap-14 p-4
+                     w-max whitespace-nowrap animate-[ticker-ltr_12s_linear_infinite]">
+          {[
+            assets.amazon_img,
+            assets.chewy_img,
+            assets.cvs_img,
+            assets.meijer_img,
+            assets.petco_img,
+            assets.petsmart_img,
+            assets.target_img,
+            assets.walgreens_img,
+            assets.walmart_img,
+          ].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt=""
+              className="h-8 sm:h-10 md:h-12 object-contain"
+            />
+          ))}
+
+          {/* Duplicate loop */}
+          {[
+            assets.amazon_img,
+            assets.chewy_img,
+            assets.cvs_img,
+            assets.meijer_img,
+            assets.petco_img,
+            assets.petsmart_img,
+            assets.target_img,
+            assets.walgreens_img,
+            assets.walmart_img,
+          ].map((img, i) => (
+            <img
+              key={`dup-${i}`}
+              src={img}
+              alt=""
+              className="h-8 sm:h-10 md:h-12 object-contain"
+            />
+          ))}
+        </Textation>
+      </div>
+
     </section>
   )
 }

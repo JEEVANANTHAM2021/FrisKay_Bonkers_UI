@@ -1,37 +1,29 @@
-//import React, { useEffect, useState } from 'react'
 import { tikVideos } from '../assets/assets'
 
 const ProductVideo = () => {
-
-   // const [scrollY, setScrollY] = useState(0)
-
-   // useEffect(() => {
-    //     const handleScroll = () => setScrollY(window.scrollY)
-    //     window.addEventListener("scroll", handleScroll)
-    //     return () => window.removeEventListener("scroll", handleScroll)
-    // },[])
-
-
   return (
-   <section className="relative h-auto bg-[#FFEBC3] text-white">
+    <section className="relative bg-[#FFEBC3] text-white p-6 md:p-8">
 
-      {/* TALL SCROLL AREA */}
-      <div className="">
+      {/* SCROLL AREA HEIGHT */}
+      <div className="relative min-h-220vh md:min-h-[220vh] lg:min-h-[260vh]">
 
         {/* STICKY CENTER CONTENT */}
-        <div className="sticky top-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none">
+        <div className="sticky flex flex-col items-center text-center z-20 pointer-events-none">
           
-          <button className="px-4 py-2 bg-[#FFD715] text-black text-3xl font-semibold rounded">
+          <button className="px-4 py-2 bg-[#FFD715] text-black 
+                             text-base sm:text-xl md:text-3xl 
+                             font-semibold rounded">
             THE VIRAL
           </button>
 
-          <h1 className="text-4xl md:text-9xl font-['FatFrank'] text-center leading-none">
+          <h1 className="mt-4 font-['FatFrank'] leading-none
+                         text-4xl sm:text-6xl md:text-8xl lg:text-9xl">
             TIKTOK <br /> TREAT
           </h1>
         </div>
 
         {/* SCROLLING VIDEOS */}
-        <div className="relative z-10  px-6 md:px-20 space-y-32">
+        <div className="relative z-10 px-4 sm:px-10 md:px-20">
 
           {/* VIDEO 1 – LEFT */}
           <div className="flex justify-start">
@@ -41,7 +33,9 @@ const ProductVideo = () => {
               loop
               muted
               playsInline
-              className="w-44 md:w-64 rounded-xl shadow-lg"
+              className="w-40 sm:w-48 md:w-64 lg:w-72
+                         aspect-9/16 object-cover
+                         rounded-2xl shadow-xl"
             />
           </div>
 
@@ -53,7 +47,9 @@ const ProductVideo = () => {
               loop
               muted
               playsInline
-              className="w-44 md:w-64 rounded-xl shadow-lg"
+              className="w-40 sm:w-48 md:w-64 lg:w-72
+                         aspect-9/16 object-cover
+                         rounded-2xl shadow-xl"
             />
           </div>
 
@@ -65,7 +61,9 @@ const ProductVideo = () => {
               loop
               muted
               playsInline
-              className="w-44 md:w-64 rounded-xl shadow-lg"
+              className="w-40 sm:w-48 md:w-64 lg:w-72
+                         aspect-9/16 object-cover
+                         rounded-2xl shadow-xl"
             />
           </div>
 
@@ -77,7 +75,9 @@ const ProductVideo = () => {
               loop
               muted
               playsInline
-              className="w-44 md:w-64 rounded-xl shadow-lg"
+              className="w-40 sm:w-48 md:w-64 lg:w-72
+                         aspect-9/16 object-cover
+                         rounded-2xl shadow-xl"
             />
           </div>
 

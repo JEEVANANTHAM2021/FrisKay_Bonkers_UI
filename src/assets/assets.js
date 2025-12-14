@@ -33,6 +33,9 @@ import petco_img from './images/petco_img.png'
 import meijer_img from './images/meijer_img.png'
 import chewy_img from './images/chewy_img.png'
 import cvs_img from './images/cvs_img.png'
+import email_icon from './icons/arroba.png'
+import whatsapp_icon from './icons/whatsapp.png'
+import instagram_icon from './icons/instagram.png'
 
 
 
@@ -80,6 +83,9 @@ export const assets = {
     petco_img,
     petsmart_img,
     meijer_img,
+    email_icon,
+    instagram_icon,
+    whatsapp_icon
 }
 
 export const tikVideos = {
