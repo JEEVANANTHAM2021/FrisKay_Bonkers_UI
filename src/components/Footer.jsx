@@ -27,7 +27,7 @@ const Footer = () => {
   }, [])
 
   return (
-    <footer className='min-h-auto bg-[#FFEBC3]'>
+    <footer className='w-full bg-[#FFEBC3]'>
         <div className='flex md:flex items-center justify-between p-8'>
         {/*--------------- Footer-Logo on Left Side--------- */}
             <div className='flex-1 justify-start'>

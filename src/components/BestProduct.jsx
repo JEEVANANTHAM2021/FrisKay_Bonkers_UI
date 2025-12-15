@@ -8,7 +8,7 @@ const BestProduct = () => {
   return (
   <section className="min-h-screen">
       {/* ------- Left Side Content ---------- */}
-      <div className='flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-4 md:p-6 mt-6'>
+      <div className='flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-6 md:p-6 mt-6'>
       <div className="text flex-1 flex flex-col justify-center">
         <h3 className="font-['Times_New_Roman'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FFEBC3] mb-4">
           WHIFFY GOOD SNACKY SNACKS
@@ -35,7 +35,7 @@ const BestProduct = () => {
               />
             </div>
 
-            <div className="flex items-center justify-between bg-amber-400 p-3 md:p-4 transition-transform duration-500 group-hover:scale-105">
+            <div className="flex items-center justify-between bg-amber-400 p-6 md:p-4 transition-transform duration-500 group-hover:scale-105">
               <h3 className="font-bold font-['Times_New_Roman']">Our Treats</h3>
               <img className="w-5" src={assets.right_arrow} alt="right_arrow" />
             </div>
@@ -51,7 +51,7 @@ const BestProduct = () => {
               />
             </div>
 
-            <div className="flex items-center justify-between bg-amber-400 p-3 md:p-4 transition-transform duration-500 group-hover:scale-105">
+            <div className="flex items-center justify-between bg-amber-400 p-6 md:p-4 transition-transform duration-500 group-hover:scale-105">
               <h3 className="font-bold font-['Times_New_Roman']">Where to Buy</h3>
               <img className="w-5" src={assets.right_arrow} alt="right_arrow" />
             </div>

@@ -4,10 +4,12 @@ import { assets } from '../assets/assets'
 
 const QualityCard = () => {
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Card 1 */}
-        <div className="min-h-340px sm:min-h-360px md:min-h-380px rounded-3xl shadow-md flex flex-col items-center justify-between p-20 bg-[#FFEBC3] text-center">
+    <section className="w-full px-4 md:px-8 lg:px-12 py-8">
+      <div className="flex md:grid flex-nowrap md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible 
+      snap-x snap-mandatory pb-4">
+  {/* Card 1 */}
+        <div className="min-w-[85%] sm:min-w-[70%] md:min-w-0 snap-center min-h-340px sm:min-h-360px md:min-h-380px 
+        rounded-3xl shadow-md flex flex-col items-center justify-between p-10 sm:p-14 md:p-20 bg-[#FFEBC3] text-center">
           <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-3 md:translate-y-7 rotate-5">
             WOW!
           </h3>
@@ -20,7 +22,8 @@ const QualityCard = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="min-h-340px sm:min-h-360px md:min-h-380px rounded-3xl shadow-md flex flex-col items-center justify-between p-20 bg-[#FFEBC3] text-center">
+        <div className="min-w-[85%] sm:min-w-[70%] md:min-w-0 snap-center min-h-340px sm:min-h-360px md:min-h-380px
+        rounded-3xl shadow-md flex flex-col items-center justify-between p-10 sm:p-14 md:p-20 bg-[#FFEBC3] text-center">
           <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-y-2 rotate-5 ">
             CATS FAVE!
           </h3>
@@ -33,7 +36,8 @@ const QualityCard = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="min-h-340px sm:min-h-360px md:min-h-380px rounded-3xl shadow-md flex flex-col items-center justify-between p-20 bg-[#FFEBC3] text-center">
+        <div className="min-w-[85%] sm:min-w-[70%] md:min-w-0 snap-center min-h-340px sm:min-h-360px md:min-h-380px
+        rounded-3xl shadow-md flex flex-col items-center justify-between p-10 sm:p-14 md:p-20 bg-[#FFEBC3] text-center">
           <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-3 md:translate-y-7 rotate-5">
             WENT BONKERS
           </h3>
