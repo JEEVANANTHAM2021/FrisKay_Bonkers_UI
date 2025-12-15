@@ -3,7 +3,7 @@ import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div className='min-h-auto mx-0'>
+    <div className='w-full'>
       <Home />
     </div>
   )

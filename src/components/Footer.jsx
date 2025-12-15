@@ -12,7 +12,7 @@ const locations = [
 const Footer = () => {
 
     const [open, setOpen] = useState(false)
-    const [selected, setSelected] = useState("India")
+    const [selected, setSelected] = useState("Coimbatore")
     const ref = useRef(null)
 
   // close on outside click
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
 
         {/*---------- bottom section--------- */}
-        <hr className='w-full border-2 border-white' />
+        <hr className='w-full border-2 border-white '/>
           <div className='w-full md:h-30  flex-row md:flex items-center justify-between gap-4 space-y-4  p-4'>
             <div className='flex items-center justify-start md:gap-2'>
               <p className='text-lg font-bold'>FrisKay Petcare Limited 2025. All rights reserved.</p>

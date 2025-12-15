@@ -10,8 +10,7 @@ import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <main className="w-full min-h-screen overflow-x-hidden">
-
+    <main className="w-full overflow-x-hidden">
       {/* --------- TOP SECTION --------- */}
       <section className="bg-[#FFEBC3] px-4 md:px-8 lg:px-16 py-4">
         <Navbar />
@@ -22,18 +21,13 @@ const Home = () => {
       {/* --------- MAIN CONTENT --------- */}
       <section className="bg-white">
         <CatImages />
-      <div className='relative isolate'>
         <Products />
-      </div>
-      <div className='relative isolate'>
         <ProductVideo />
         <QualityCard />
-      </div>
       </section>
 
       {/* --------- FOOTER --------- */}
       <Footer />
-
     </main>
   )
 }

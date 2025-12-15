@@ -18,81 +18,45 @@ const Products = () => {
 
   useEffect(() => {
     if (paused) return
-    const timer = setInterval(() => {
-      setIndex((i) => (i + 1) % total)
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev === total - 1 ? 0 : prev + 1))
     }, 2500)
-    return () => clearInterval(timer)
+    return () => clearInterval(interval)
   }, [paused, total])
 
   return (
-    <section className="w-full px-4 sm:px-6 md:px-10 lg:px-16 py-12">
-
-      {/* ---------- BACKGROUND TITLE ---------- */}
-      <div
-        className="relative w-full max-w-7xl mx-auto
-                   min-h-[22vh] sm:min-h-[28vh] md:min-h-[32vh]
-                   flex items-center justify-center
-                   rounded-3xl bg-cover bg-center
-                   transition-all duration-700"
-        style={{ backgroundImage: `url(${items[index].bg})` }}
-      >
-        <h1
-          key={index}
-          className="text-white text-center font-bold
-                     text-3xl sm:text-5xl md:text-6xl lg:text-7xl
-                     font-['Times_New_Roman'] transition-opacity duration-500"
-        >
+    <section className="w-full px-4 py-12">
+      {/* TITLE */}
+      <div className="relative w-full max-w-6xl mx-auto min-h-[20vh] m:min-h-[25vh] flex items-center justify-center rounded-3xl
+                   bg-cover bg-center transition-all duration-700"
+                   style={{ backgroundImage: `url(${items[index].bg})` }}>
+        <h1 className="text-white text-6xl font-bold">
           {items[index].title}
         </h1>
       </div>
 
-      {/* ---------- PRODUCT SLIDER ---------- */}
-      <div
-        className="mt-10 flex items-center justify-center
-                   gap-4 sm:gap-6 md:gap-10 lg:gap-14"
+      {/* SLIDER */}
+      <div className="mt-10 flex justify-center"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
-      >
-
-        {/* LEFT */}
-        <img
-          src={items[(index - 1 + total) % total].product}
-          alt="prev"
-          className="hidden md:block 
-                     w-28 md:w-36 lg:w-40
-                     transition-transform duration-500
-                     cursor-pointer hover:animate-[shake_0.25s_ease-in-out]"
-        />
-
-        {/* CENTER */}
-        <img
-          src={items[index].product}
-          alt="current"
-          className="w-36 sm:w-44 md:w-52 lg:w-60 
-                     transition-transform duration-500
-                     cursor-pointer hover:animate-[shake_0.25s_ease-in-out]"
-        />
-
-        {/* RIGHT */}
-        <img
-          src={items[(index + 1) % total].product}
-          alt="next"
-          className="hidden sm:block
-                     w-28 sm:w-32 md:w-36 lg:w-40 
-                     transition-transform duration-500
-                     cursor-pointer hover:animate-[shake_0.25s_ease-in-out]"
-        />
+        >
+        <div className="w-full overflow-hidden">
+          <div className="flex transition-transform duration-700 ease-in-out" 
+          style={{ transform: `translateX(-${index * 100}%)` }}>
+            {items.map((item, i) => (
+              <div key={i} className="w-full h-full shrink-0 flex items-center justify-center text-4xl 
+              font-bold rounded-lg cursor-pointer hover:animate-[tilt-shake_0.3s_linear_infinite]">
+                <img src={item.product} alt={item.title} />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
-      {/* ---------- ACTION BUTTONS ---------- */}
-      <div className="mt-10 flex flex-col sm:flex-row
-                      items-center justify-center gap-4 sm:gap-6">
-        <button className="px-6 py-3 bg-[#FFD715] rounded-sm font-bold">
-          Learn More
-        </button>
-        <button className="px-6 py-3 bg-[#FFD715] rounded-sm font-bold">
-          Where To Buy
-        </button>
+      {/* BUTTONS */}
+      <div className="mt-10 flex justify-center gap-6">
+        <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-bold">Learn More</button>
+        <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-bold">Where To Buy</button>
       </div>
 
     </section>
