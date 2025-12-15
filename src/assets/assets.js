@@ -36,6 +36,7 @@ import cvs_img from './images/cvs_img.png'
 import email_icon from './icons/arroba.png'
 import whatsapp_icon from './icons/whatsapp.png'
 import instagram_icon from './icons/instagram.png'
+import site_logo from './images/animal.png'
 
 
 
@@ -85,7 +86,8 @@ export const assets = {
     meijer_img,
     email_icon,
     instagram_icon,
-    whatsapp_icon
+    whatsapp_icon,
+    site_logo
 }
 
 export const tikVideos = {
