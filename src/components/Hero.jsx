@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Hero = () => {
   return (
-    <main className="w-full h-auto md:min-h-screen max-w-7xl mx-auto mt-10 mb-45 sm:mt-0 sm:mb-0 flex flex-col lg:flex-row items-center gap-20 md:gap-45 relative">
+    <main className="w-full h-full max-w-7xl mx-auto mt-15 mb-45 sm:mb-30 flex flex-col lg:flex-row items-center gap-20 md:gap-45 relative">
       
       {/* ------- Left Side Content ------- */}
       <div className="flex-row md:flex-col items-center text-center lg:text-left">

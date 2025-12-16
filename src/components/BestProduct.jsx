@@ -6,7 +6,7 @@ import Textation from './Textation'
 const BestProduct = () => {
 
   return (
-  <section className="min-h-screen">
+  <section className="w-full">
       {/* ------- Left Side Content ---------- */}
       <div className='flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-6 md:p-6 mx-auto'>
       <div className="text flex-1 flex flex-col justify-center">
