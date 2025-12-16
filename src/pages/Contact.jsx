@@ -44,7 +44,7 @@ const Contact = () => {
   };
   return (
     <section className='w-full overflow-x-hidden bg-[#FFEBC3]'>
-        <div className='pl-5 pr-5'>
+        <div className='px-4 md:px-8 lg:px-16 py-4'>
             <Navbar />
         </div>
     {/*-------- Contact Area ------------ */}

@@ -10,16 +10,16 @@ const Navbar = () => {
       
       {/* ------------ Left Side ------------ */}
       <div className="flex items-center gap-2 cursor-pointer">
-        <img className="w-16 md:w-full" src={assets.logo} alt="Bronker-logo"/>
+      <Link to={'/'}><img className="w-16 md:w-full" src={assets.logo} alt="Bronker-logo"/></Link>
         <p className="text-sm md:text-base font-normal">- Home</p>
       </div>
 
       {/* ------------ Center (Desktop Menu) ------------ */}
       <nav className="hidden md:flex">
         <ul className="flex items-center gap-6 text-sm md:text-2xl font-['Dinosaur']">
-          <Link to="" className="cursor-pointer hover:text-amber-500 transition">Our Food</Link>
-          <Link className="cursor-pointer hover:text-amber-500 transition">Where to Buy</Link>
-          <Link className="cursor-pointer hover:text-amber-500 transition">FAQ</Link>
+          <Link to="/treats" className="cursor-pointer hover:text-amber-500 transition">Our Treats</Link>
+          <Link to='/buy' className="cursor-pointer hover:text-amber-500 transition">Where to Buy</Link>
+          <Link to='/faq' className="cursor-pointer hover:text-amber-500 transition">FAQ</Link>
           <Link to='/contact' className="cursor-pointer hover:text-amber-500 transition">Contact</Link>
         </ul>
       </nav>
@@ -48,10 +48,10 @@ const Navbar = () => {
         `}
       >
         <ul className="flex-col flex items-center justify-end gap-6 py-6 text-lg font-semibold">
-          <li onClick={() => setOpen(false)} className="cursor-pointer hover:text-amber-500">Our Food</li>
-          <li onClick={() => setOpen(false)} className="cursor-pointer hover:text-amber-500">Where to Buy</li>
-          <li onClick={() => setOpen(false)} className="cursor-pointer hover:text-amber-500">FAQ</li>
-          <li onClick={() => setOpen(false)} className="cursor-pointer hover:text-amber-500">Contact</li>
+          <Link to={'/treats'} onClick={() => setOpen(false)} className="cursor-pointer hover:text-amber-500">Our Treats</Link>
+          <Link to={'/buy'} onClick={() => setOpen(false)} className="cursor-pointer hover:text-amber-500">Where to Buy</Link>
+          <Link to={'/faq'} onClick={() => setOpen(false)} className="cursor-pointer hover:text-amber-500">FAQ</Link>
+          <Link to={'/contact'} onClick={() => setOpen(false)} className="cursor-pointer hover:text-amber-500">Contact</Link>
         </ul>
       </div>
 
