@@ -33,13 +33,13 @@ const getDistanceKm = (lat1, lon1, lat2, lon2) => {
 
 /* ---------- Shops Data ---------- */
 const shopsData = [
-  { name: "Pet Shop A", address: "Chennai", lat: 13.0827, lng: 80.2707 },
-  { name: "Pet Shop B", address: "Velachery, Chennai", lat: 12.9759, lng: 80.2212 },
-  { name: "Pet Shop C", address: "Tambaram, Chennai", lat: 12.9249, lng: 80.1 },
-  { name: "Pet Shop D", address: "Madurai", lat: 9.9252, lng: 78.1198 },
-  { name: "Pet Shop E", address: "Trichy", lat: 10.7905, lng: 78.7047 },
-  { name: "Pet Shop F", address: "Coimbatore", lat: 11.0168, lng: 76.9558 },
-  { name: "Pet Shop G", address: "Salem", lat: 11.6643, lng: 78.146 },
+  { name: "FrisKay-Bonkers Shop Main", address: "Chennai", lat: 13.0827, lng: 80.2707 },
+  { name: "FrisKay-Bonkers Shop 2", address: "Velachery, Chennai", lat: 12.9759, lng: 80.2212 },
+  { name: "FrisKay-Bonkers Shop 3", address: "Tambaram, Chennai", lat: 12.9249, lng: 80.1 },
+  { name: "FrisKay-Bonkers Shop 4", address: "Madurai", lat: 9.9252, lng: 78.1198 },
+  { name: "FrisKay-Bonkers Shop 5", address: "Trichy", lat: 10.7905, lng: 78.7047 },
+  { name: "FrisKay-Bonkers Shop 6", address: "Coimbatore", lat: 11.0168, lng: 76.9558 },
+  { name: "FrisKay-Bonkers Shop 7", address: "Salem", lat: 11.6643, lng: 78.146 },
 ];
 
 const WhereToBuy = () => {
