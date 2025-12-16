@@ -3,10 +3,9 @@ import { assets } from '../assets/assets'
 
 const CatImages = () => {
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16 py-8">
+    <section className="w-full px-4 md:px-8 lg:px-16 py-8 bg-white">
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        
         <img
           src={assets.carousel_image1}
           alt=""

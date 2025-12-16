@@ -10,7 +10,7 @@ const App = () => {
     <div className='w-full'>
       <Routes>
         <Route path= "/" element={<Home />} />
-        <Route path='/wheretobuy' element={<WhereToBuy />} />
+        <Route path='/buy' element={<WhereToBuy />} />
         <Route path='/FAQ' element={<FAQ />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>

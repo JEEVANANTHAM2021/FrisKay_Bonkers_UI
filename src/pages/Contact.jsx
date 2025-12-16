@@ -51,7 +51,7 @@ const Contact = () => {
         <div className='px-4 md:px-8 lg:px-16 py-4'>
     {/* ------- Left Side Content ---------- */}
             <div className='flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-6 md:p-6 mt-6'>
-            <div className="text flex-1 flex flex-col justify-center">
+            <div className="flex-1 justify-center">
             <h3 className="font-['FatFrank'] text-3xl sm:text-4xl lg:text-7xl font-bold text-[#FFEBC3] mb-4">
             GET IN TOUCH
             </h3>
