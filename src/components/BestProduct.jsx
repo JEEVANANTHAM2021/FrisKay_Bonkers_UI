@@ -10,11 +10,11 @@ const BestProduct = () => {
       {/* ------- Left Side Content ---------- */}
       <div className='flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-6 md:p-6 mt-6'>
       <div className="text flex-1 flex flex-col justify-center">
-        <h3 className="font-['Times_New_Roman'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FFEBC3] mb-4">
+        <h3 className="font-['FatFrank'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FFEBC3] mb-4">
           WHIFFY GOOD SNACKY SNACKS
         </h3>
 
-        <p className="font-['Times_New_Roman'] text-sm text-start sm:text-base lg:text-lg font-normal text-gray-900">
+        <p className="font-['RooneySansRegular'] text-sm text-start sm:text-base lg:text-lg font-normal text-gray-900">
         Pets make life better. And they are absolutely BONKERS. Wag-first, 
         zoomie-powered, snack-obsessed little weirdos - and we love them for it. 
         We make snacks that celebrate the weird and wonderful joy of 
@@ -36,7 +36,7 @@ const BestProduct = () => {
             </div>
 
             <div className="flex items-center justify-between bg-amber-400 p-6 md:p-4 transition-transform duration-500 group-hover:scale-105">
-              <h3 className="font-bold font-['Times_New_Roman']">Our Treats</h3>
+              <h3 className="font-['Dinosaur']">Our Treats</h3>
               <img className="w-5" src={assets.right_arrow} alt="right_arrow" />
             </div>
           </Card>
@@ -52,7 +52,7 @@ const BestProduct = () => {
             </div>
 
             <div className="flex items-center justify-between bg-amber-400 p-6 md:p-4 transition-transform duration-500 group-hover:scale-105">
-              <h3 className="font-bold font-['Times_New_Roman']">Where to Buy</h3>
+              <h3 className="font-['Dinosaur']">Where to Buy</h3>
               <img className="w-5" src={assets.right_arrow} alt="right_arrow" />
             </div>
           </Card>
@@ -69,7 +69,7 @@ const BestProduct = () => {
       </div>
     </div>
     {/* --------- Textation Motion ---------- */}
-    <Textation>
+    <Textation className="font-['Dinosaur']">
        <span className="mx-8"> YUMMO</span>
         <span className="mx-8"> MULTI-AWARD WINNING</span>
         <span className="mx-8"> OVER 15000 FIVE STAR REVIEWS</span>

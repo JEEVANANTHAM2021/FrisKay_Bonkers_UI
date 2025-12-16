@@ -76,7 +76,7 @@ const ViewProduct = () => {
   return (
     <section className="w-full">
     {/*---------- Header text-------------- */}
-        <div className="flex items-center justify-center text-3xl md:text-5xl text-[#FFEBC3] font-semibold mb-10">
+        <div className="flex items-center justify-center text-3xl md:text-5xl text-[#FFEBC3] font-['Dinosaur'] mb-10">
             <h3 className="uppercase">More Ways to Get Bonkers</h3>
         </div>
 
@@ -108,17 +108,17 @@ const ViewProduct = () => {
               />
 
               {/* TITLE */}
-              <h3 className="mt-6 text-lg sm:text-xl md:text-2xl font-bold">
+              <h3 className="mt-6 text-lg sm:text-xl md:text-2xl font-['Dinosaur']">
                 {item.title}
               </h3>
 
               {/* DESC */}
-              <p className="mt-2 text-gray-600 text-sm md:text-base">
+              <p className="mt-2 text-gray-600 text-sm md:text-base font-['rooneySansRegular']">
                 {item.desc}
               </p>
 
               {/* BUTTON */}
-              <button className="mt-5 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition">
+              <button className="mt-5 px-6 py-2 font-['Dinosaur'] bg-black text-white rounded-full hover:bg-gray-800 transition">
                 Shop Now
               </button>
             </div>
@@ -127,7 +127,7 @@ const ViewProduct = () => {
       </div>
 
       {/* ---------- TEXTATION ---------- */}
-      <Textation className="bg-[#FFD715]">
+      <Textation className="bg-[#FFD715] font-['Dinosaur'] font-normal py-2 md:py-4">
         <span className="mx-8 uppercase">Better When It's Bonkers</span>
         <span className="mx-8 uppercase">Better When It's Bonkers</span>
         <span className="mx-8 uppercase">Better When It's Bonkers</span>

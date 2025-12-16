@@ -45,13 +45,13 @@ const ProductVideo = () => {
   }, [])
 
   return (
-    <section className="bg-black text-white px-4 sm:px-6 lg:px-16 py-20 sm:py-32 space-y-24 sm:space-y-32 lg:space-y-40">
+    <section className="bg-black text-white px-4 sm:px-6 lg:px-16 py-20 sm:py-32 space-y-20 sm:space-y-32 lg:space-y-40">
     {/*-------Header Text Content----- */}
       <div className="sticky flex flex-col items-center text-center pointer-events-none">  
-          <button className="px-4 py-2 bg-[#FFD715] text-black text-base sm:text-xl md:text-3xl font-semibold rounded">
+          <button className="font-['Dinosaur'] px-4 py-2 bg-[#FFD715] text-black text-base sm:text-xl md:text-3xl font-semibold rounded translate-y-3 md:translate-y-5 rotate-6">
             THE VIRAL
           </button>
-          <h1 className="mt-4 font-['FatFrank'] leading-none text-4xl sm:text-6xl md:text-8xl lg:text-9xl">
+          <h1 className="font-['FatFrank'] leading-none text-4xl sm:text-6xl md:text-8xl lg:text-9xl z-30">
             TIKTOK <br /> TREAT
           </h1>
         </div>
@@ -88,10 +88,10 @@ const ProductVideo = () => {
                 ${isLeft ? "md:order-2" : "md:order-1"}
                `}
             >
-              <h3 className="text-2xl sm:text-3xl lg:text-7xl font-bold mb-3 sm:mb-4">
+              <h3 className="text-2xl sm:text-3xl lg:text-7xl font-['Dinosaur'] mb-3 sm:mb-4">
                 {item.title}
               </h3>
-              <p className="text-gray-200 font-semibold text-2xl text-center max-w-md mx-auto md:mx-0">
+              <p className="text-gray-200 font-['rooneySansRegular'] text-2xl text-center max-w-md mx-auto md:mx-0">
                 {item.desc}
               </p>
             </div>

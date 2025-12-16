@@ -15,7 +15,7 @@ const Navbar = () => {
 
       {/* ------------ Center (Desktop Menu) ------------ */}
       <nav className="hidden md:flex">
-        <ul className="flex items-center gap-6 text-sm md:text-2xl font-semibold">
+        <ul className="flex items-center gap-6 text-sm md:text-2xl font-['Dinosaur']">
           <li className="cursor-pointer hover:text-amber-500 transition">Our Food</li>
           <li className="cursor-pointer hover:text-amber-500 transition">Where to Buy</li>
           <li className="cursor-pointer hover:text-amber-500 transition">FAQ</li>

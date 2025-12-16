@@ -7,18 +7,18 @@ const Hero = () => {
       
       {/* ------- Left Side Content ------- */}
       <div className="flex-1 items-center justify-start text-center lg:text-left">
-        <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl">
+        <h1 className="font-['Dinosaur'] text-3xl sm:text-4xl lg:text-5xl">
           Your cat will go
         </h1>
         <div className="flex justify-center lg:justify-start my-4">
           <img className="w-56 sm:w-64 lg:w-72" src={assets.bonkers} alt="bonkers_image"/>
         </div>
-        <p className="font-normal text-base sm:text-lg lg:text-xl text-gray-700">
+        <p className="font-['rooneySansRegular'] text-base sm:text-lg lg:text-xl text-gray-700">
           ..for the World's best tasting cat food, sourced with
           only the finest ingredients. Made with love from the
           heart of Mississippi.
         </p>
-        <button className="mt-6 px-6 py-4 text-lg sm:text-xl border border-gray-200 rounded-md shadow-md bg-amber-500 hover:bg-amber-300 transition cursor-pointer">
+        <button className="mt-6 px-6 py-4 text-lg sm:text-xl font-['Dinosaur'] rounded shadow-lg bg-amber-500 hover:bg-amber-300 transition cursor-pointer">
           Get Bonkers
         </button>
       </div>

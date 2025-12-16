@@ -30,7 +30,7 @@ const Products = () => {
       <div className="relative w-full max-w-6xl mx-auto min-h-[20vh] m:min-h-[25vh] flex items-center justify-center rounded-3xl
                    bg-cover bg-center transition-all duration-700"
                    style={{ backgroundImage: `url(${items[index].bg})` }}>
-        <h1 className="text-white text-6xl font-bold">
+        <h1 className="text-white text-6xl font-['FatFrank']">
           {items[index].title}
         </h1>
       </div>
@@ -55,8 +55,8 @@ const Products = () => {
 
       {/* BUTTONS */}
       <div className="mt-10 flex justify-center gap-6">
-        <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-bold">Learn More</button>
-        <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-bold">Where To Buy</button>
+        <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-['Dinosaur']">Learn More</button>
+        <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-['Dinosaur']">Where To Buy</button>
       </div>
 
     </section>

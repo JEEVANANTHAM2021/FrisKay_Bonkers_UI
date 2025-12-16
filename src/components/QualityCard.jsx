@@ -10,10 +10,10 @@ const QualityCard = () => {
   {/* Card 1 */}
         <div className="min-w-[85%] sm:min-w-[70%] md:min-w-0 snap-center min-h-340px sm:min-h-360px md:min-h-380px 
         rounded-3xl shadow-md flex flex-col items-center justify-between p-10 sm:p-14 md:p-20 bg-[#FFEBC3] text-center">
-          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-3 md:translate-y-7 rotate-5">
+          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-['Dinosaur'] translate-y-6 md:translate-y-2 rotate-5">
             WOW!
           </h3>
-          <p className="uppercase font-bold text-3xl sm:text-2xl md:text-3xl text-white z-50">
+          <p className="uppercase font-['FatFrank'] text-3xl sm:text-2xl md:text-3xl text-white z-50">
             They Absolutely Love These Treats!
           </p>
           <div className="flex gap-1 text-2xl sm:text-3xl">
@@ -24,10 +24,10 @@ const QualityCard = () => {
         {/* Card 2 */}
         <div className="min-w-[85%] sm:min-w-[70%] md:min-w-0 snap-center min-h-340px sm:min-h-360px md:min-h-380px
         rounded-3xl shadow-md flex flex-col items-center justify-between p-10 sm:p-14 md:p-20 bg-[#FFEBC3] text-center">
-          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-y-2 rotate-5 ">
+          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-['Dinosaur'] translate-y-2 rotate-5 ">
             CATS FAVE!
           </h3>
-          <p className="uppercase font-bold text-3xl sm:text-2xl md:text-3xl text-white z-50">
+          <p className="uppercase font-['FatFrank'] text-3xl sm:text-2xl md:text-3xl text-white z-50">
             Demolished In Seconds, Now a Weekly Purchase
           </p>
           <div className="flex gap-1 text-2xl sm:text-3xl">
@@ -38,10 +38,10 @@ const QualityCard = () => {
         {/* Card 3 */}
         <div className="min-w-[85%] sm:min-w-[70%] md:min-w-0 snap-center min-h-340px sm:min-h-360px md:min-h-380px
         rounded-3xl shadow-md flex flex-col items-center justify-between p-10 sm:p-14 md:p-20 bg-[#FFEBC3] text-center">
-          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-bold translate-3 md:translate-y-7 rotate-5">
+          <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-['Dinosaur'] translate-y-5 md:translate-y-7 rotate-5">
             WENT BONKERS
           </h3>
-          <p className="uppercase font-bold text-3xl sm:text-2xl md:text-3xl text-white z-50">
+          <p className="uppercase font-['Fatfrank'] text-3xl sm:text-2xl md:text-3xl text-white z-50">
             They Are Now Addicted To Bonkers
           </p>
           <div className="flex gap-1 text-2xl sm:text-3xl">
