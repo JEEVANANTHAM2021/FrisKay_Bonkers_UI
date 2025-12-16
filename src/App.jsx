@@ -1,10 +1,19 @@
 import React from 'react'
 import Home from './pages/Home'
+import WhereToBuy from './pages/WhereToBuy'
+import FAQ from './pages/FAQ'
+import Contact from './pages/Contact'
+import {Routes, Route} from 'react-router-dom'
 
 const App = () => {
   return (
     <div className='w-full'>
-      <Home />
+      <Routes>
+        <Route path= "/" element={<Home />} />
+        <Route path='/wheretobuy' element={<WhereToBuy />} />
+        <Route path='/FAQ' element={<FAQ />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
     </div>
   )
 }

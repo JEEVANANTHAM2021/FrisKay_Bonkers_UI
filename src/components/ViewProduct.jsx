@@ -76,7 +76,7 @@ const ViewProduct = () => {
   return (
     <section className="w-full">
     {/*---------- Header text-------------- */}
-        <div className="flex items-center justify-center text-3xl md:text-5xl text-[#FFEBC3] font-['Dinosaur'] mb-10">
+        <div className="flex items-center justify-center text-2xl md:text-5xl text-[#FFEBC3] font-['Dinosaur'] mb-10">
             <h3 className="uppercase">More Ways to Get Bonkers</h3>
         </div>
 
