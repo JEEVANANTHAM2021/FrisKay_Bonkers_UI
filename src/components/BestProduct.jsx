@@ -8,7 +8,7 @@ const BestProduct = () => {
   return (
   <section className="min-h-screen">
       {/* ------- Left Side Content ---------- */}
-      <div className='flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-6 md:p-6 mt-6'>
+      <div className='flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-6 md:p-6 mx-auto'>
       <div className="text flex-1 flex flex-col justify-center">
         <h3 className="font-['FatFrank'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FFEBC3] mb-4">
           WHIFFY GOOD SNACKY SNACKS
