@@ -43,7 +43,7 @@ const Contact = () => {
     alert("Form submitted!");
   };
   return (
-    <section className='w-full min-h-screen overflow-x-hidden bg-[#FFEBC3]'>
+    <section className='w-full overflow-x-hidden bg-[#FFEBC3]'>
         <div className='px-4 md:px-8 lg:px-16 py-4'>
             <Navbar />
         </div>
