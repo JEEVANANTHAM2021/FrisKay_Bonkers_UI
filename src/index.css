@@ -1,6 +1,9 @@
 @import url('http://font.download');
 
 
+html, body {
+  overflow-x: hidden;
+}
 
 @tailwind utilities;
 /* news ticker animation */
