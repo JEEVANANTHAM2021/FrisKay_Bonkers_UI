@@ -140,6 +140,12 @@ const Contact = () => {
             </div>
         </div>
     </div>
+
+    {/*-------- PexelsVideo for Cats------------ */}
+      <div>
+        <PexelsVideo />
+      </div>
+
      {/* --------- Textation Motion ---------- */}
     <Textation className="font-['Dinosaur'] bg-[#FFD715]">
        <span className="mx-8"> YUMMO</span>
