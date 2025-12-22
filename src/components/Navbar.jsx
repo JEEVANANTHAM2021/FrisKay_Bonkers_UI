@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* ------------ Mobile Menu ------------ */}
         <div
           className={`
-            absolute top-full left-70 right-0 w-50 rounded-2xl shadow-2xl z-10 bg-[#FFEBC3]
+            absolute top-full translate-y-6 right-0 w-50 rounded-2xl shadow-2xl z-10 bg-[#FFEBC3]
             md:hidden
             transition-all duration-300 ease-in-out
             ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}
