@@ -6,7 +6,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="relative flex items-center justify-between px-4 py-3 md:px-2">
+    <header className="relative w-full h-12 md:h-14 flex items-center justify-between px-4 py-3 md:px-2">
       
       {/* ------------ Left Side ------------ */}
       <div className="flex items-center gap-2 cursor-pointer">
