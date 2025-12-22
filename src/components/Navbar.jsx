@@ -10,8 +10,8 @@ const Navbar = () => {
       
       {/* ------------ Left Side ------------ */}
       <div className="flex items-center gap-2 cursor-pointer">
-      <Link to={'/'}><img className="w-16 md:w-full" src={assets.logo} alt="Bronker-logo"/></Link>
-        <p className="text-sm md:text-base font-normal">- Home</p>
+      <Link to={'/'}><img className="w-16 md:w-full" src={assets.logo} alt="Bronker-logo"/>
+        <p className="text-sm md:text-base font-normal">- Home</p></Link>
       </div>
 
       {/* ------------ Center (Desktop Menu) ------------ */}
