@@ -5,7 +5,7 @@ import UserProfile from './UserProfile'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-    const sideRef = useRef();
+  const sideRef = useRef();
   
     useEffect(() => {
       const handler = (e) => {
@@ -43,7 +43,7 @@ const Navbar = () => {
       </nav>
 
       {/* ------------ Right Side ------------ */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3" ref={sideRef}>
         <img className="w-8 md:w-9 cursor-pointer" src={assets.cart_icon} alt="cart_icon"/>
 
         {/*Profile - Menu*/}
@@ -54,16 +54,16 @@ const Navbar = () => {
           className="w-8 cursor-pointer md:hidden"
           src={assets.menu_icon}
           alt="hamburger"
-          onClick={() => setOpen(!open)} ref={sideRef}
+          onClick={() => setOpen(!open)} 
         />
 
         {/* ------------ Mobile Menu ------------ */}
         <div
           className={`
-            absolute top-full translate-y-6 right-0 w-50 rounded-2xl shadow-2xl z-10 bg-[#FFEBC3]
+            absolute top-full right-0 w-50 rounded-2xl shadow-2xl z-10 bg-[#FFEBC3]
             md:hidden
             transition-all duration-300 ease-in-out
-            ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}
+            ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"}
           `} 
         >
           <ul className="flex-col flex items-center justify-end gap-6 py-6 text-lg font-semibold">
