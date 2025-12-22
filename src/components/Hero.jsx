@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
 
       {/* ------- Right Side Image ------- */}
-      <div className="flex items-center relative w-100 h-100 md:w-87.5 md:h-87.5">
+      <div className="flex items-center relative translate-x-4 w-100 h-100 md:w-87.5 md:h-87.5">
         {/* Decorative circles */}
         <div className="absolute w-90 h-90 md:w-80 md:h-80 lg:w-100 lg:h-100 rounded-full border-12 border-white z-1"></div>
         <div className="absolute w-80 h-80 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-12 border-[#FFEBC3] z-2"></div>
