@@ -10,9 +10,15 @@ const Navbar = () => {
       
       {/* ------------ Left Side ------------ */}
       <div className="flex items-center gap-2 cursor-pointer">
-      <Link to={'/'}><img className="w-16 md:w-full" src={assets.logo} alt="Bronker-logo"/>
-        <p className="text-sm md:text-base font-normal">- Home</p></Link>
+          <img className="w-16 md:w-full" src={assets.logo} alt="Bronker-logo"/>
+          <Link to={'/'}><div className='border'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+              </div>
+          </Link>
       </div>
+    
 
       {/* ------------ Center (Desktop Menu) ------------ */}
       <nav className="hidden md:flex">
