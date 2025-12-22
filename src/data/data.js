@@ -13,6 +13,17 @@ import CatBite_3 from '../assets/prod-img/bonkers-cat3.png'
 import CatBite_4 from '../assets/prod-img/bonkers-cat4.png'
 import CatBite_5 from '../assets/prod-img/bonkers-cat5.png'
 import CatBite_hover from '../assets/prod-img/bonkers-cat-hover.png'
+import Barkery_img1 from '../assets/prod-img/bonkers-barkery1.png'
+import Barkery_img2 from '../assets/prod-img/bonkers-barkery2.png'
+import Barkery_hover from '../assets/prod-img/bonkers-barkery-hover.png'
+import BBQ_img1 from '../assets/prod-img/bonkers-bbq1.png'
+import BBQ_img2 from '../assets/prod-img/bonkers-bbq2.png'
+import BBQ_hover from '../assets/prod-img/bonkers-bbq-hover.png'
+import Zoomers_img1 from '../assets/prod-img/bonkers-zoomers1.png'
+import Zoomers_img2 from '../assets/prod-img/bonkers-zoomers2.png'
+import Zoomers_hover from '../assets/prod-img/bonkers-zoomers-hover.png'
+import Surprise_img from '../assets/prod-img/bonkers-surprise.png'
+import Surprise_hover from '../assets/prod-img/bonkers-surprise-hover.png'
 
 
 
@@ -34,7 +45,6 @@ export const categories = [
   "BONKERS CAT BITES",
   "BONKERS DOG BITES",
   "BONKERS ZOOMERS",
-  "BONKERS BARKERY",
   "BONKERS BBQ",
   "BONKERS SURPRISE"
 ];
@@ -138,51 +148,58 @@ export const products = [
     },
     {
         id: 13,
-        title: "BONKERS PURRPOPS",
-        desc: "Tip Top Tuna",
-        category: "BONKERS PURRPOPS",
-        image: Purrpops_img4,
-        h_image: Purrpops_hover,
+        title: "BONKERS DOG BITES",
+        desc: "Kickin Chicken Medium",
+        category: "BONKERS DOG BITES",
+        image: Barkery_img1,
+        h_image: Barkery_hover,
     },
     {
         id: 14,
-        title: "BONKERS PURRPOPS",
-        desc: "Tip Top Tuna",
-        category: "BONKERS PURRPOPS",
-        image: Purrpops_img4,
-        h_image: Purrpops_hover,
+        title: "BONKERS DOG BITES",
+        desc: "Kickin chicken Mini",
+        category: "BONKERS DOG BITES",
+        image: Barkery_img2,
+        h_image: Barkery_hover,
     },
     {
         id: 15,
-        title: "BONKERS PURRPOPS",
-        desc: "Tip Top Tuna",
-        category: "BONKERS PURRPOPS",
-        image: Purrpops_img4,
-        h_image: Purrpops_hover,
+        title: "BONKERS BBQ",
+        desc: "Burger Patties",
+        category: "BONKERS BBQ",
+        image: BBQ_img1,
+        h_image: BBQ_hover,
     },
     {
         id: 16,
-        title: "BONKERS PURRPOPS",
-        desc: "Tip Top Tuna",
-        category: "BONKERS PURRPOPS",
-        image: Purrpops_img4,
-        h_image: Purrpops_hover,
+        title: "BONKERS BBQ",
+        desc: "Steak Bites",
+        category: "BONKERS BBQ",
+        image: BBQ_img2,
+        h_image: BBQ_hover,
     },
     {
         id: 17,
-        title: "BONKERS PURRPOPS",
-        desc: "Tip Top Tuna",
-        category: "BONKERS PURRPOPS",
-        image: Purrpops_img4,
-        h_image: Purrpops_hover,
+        title: "BONKERS ZOOMERS",
+        desc: "BBQ Beef",
+        category: "BONKERS ZOOMERS",
+        image: Zoomers_img1,
+        h_image: Zoomers_hover,
     },
     {
         id: 18,
-        title: "BONKERS PURRPOPS",
-        desc: "Tip Top Tuna",
-        category: "BONKERS PURRPOPS",
-        image: Purrpops_img4,
-        h_image: Purrpops_hover,
+        title: "BONKERS ZOOMERS",
+        desc: "Smoky Bacon",
+        category: "BONKERS ZOOMERS",
+        image: Zoomers_img2,
+        h_image: Zoomers_hover,
     },
-
+    {
+        id: 19,
+        title: "BONKERS SURPRISE",
+        desc: "Dog Toy's & Tasty Treats",
+        category: "BONKERS SURPRISE",
+        image: Surprise_img,
+        h_image: Surprise_hover,
+    },
 ];

@@ -152,7 +152,7 @@ const FaqData = () => {
     </div>
 
     {/* RIGHT SIDE FAQ */}
-    <div className="w-full lg:w-2/3 max-h-137.5 overflow-y-auto pr-2">
+    <div className="w-full lg:w-2/3 max-h-137.5 overflow-y-auto pr-2 no-scrollbar">
 
       <h4 className='text-[#FFEBC3] text-2xl sm:text-3xl font-[Dinosaur] mb-4'>
         {faq[activeHeading].heading}
