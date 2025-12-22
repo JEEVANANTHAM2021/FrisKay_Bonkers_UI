@@ -16,13 +16,13 @@ const AllProducts = () => {
 
         {/* LEFT PANEL (STICKY) */}
         <div className="w-full md:w-[30%] bg-white p-6 rounded-xl shadow md:sticky md:top-6 md:h-fit">
-          <h2 className="text-2xl font-bold mb-4">All Products</h2>
+          <h2 className="text-2xl font-[Dinosaur] mb-4">All Products</h2>
 
           <ul className="flex flex-wrap gap-3 md:block md:space-y-3">
             {categories.map((cat) => (
               <li
                 key={cat}
-                className={`cursor-pointer px-4 py-2 rounded-lg font-medium text-sm md:text-base transition
+                className={`cursor-pointer px-4 py-2 rounded-lg font-[Dinosaur] font-normal text-sm md:text-base transition
                   ${
                     selectedCategory === cat
                       ? "bg-black text-white"
@@ -38,11 +38,11 @@ const AllProducts = () => {
 
         {/* RIGHT PANEL (SCROLLS) */}
         <div className="w-full md:w-[70%] max-h-[90vh] overflow-y-auto pr-2 no-scrollbar">
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="text-xl font-[Dinosaur] mb-4">
             Showing: {selectedCategory}
           </h2>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {filteredProducts.map((product) => (
               <Card
@@ -65,9 +65,9 @@ const AllProducts = () => {
                 </div>
 
                 {/* TEXT */}
-                <div className="px-4 py-3">
-                  <h3 className="text-lg font-bold">{product.title}</h3>
-                  <p className="text-gray-600 uppercase text-sm">
+                <div className="px-4 py-3 font-[Dinosaur]">
+                  <h3 className="text-lg">{product.title}</h3>
+                  <p className="text-gray-400 uppercase text-sm">
                     {product.desc}
                   </p>
                 </div>
