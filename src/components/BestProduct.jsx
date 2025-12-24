@@ -70,7 +70,7 @@ const BestProduct = () => {
     </div>
     {/* --------- Textation Motion ---------- */}
     <Textation className="font-['Dinosaur'] bg-[#FFD715] shadow-lg py-3">
-       <span className="mx-8"> YUMMO</span>
+        <span className="mx-8"> YUMMO</span>
         <span className="mx-8"> MULTI-AWARD WINNING</span>
         <span className="mx-8"> OVER 15000 FIVE STAR REVIEWS</span>
         <span className="mx-8"> NO ARTIFICIAL NASTIES</span>

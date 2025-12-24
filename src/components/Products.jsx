@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Products = () => {
   const items = [
@@ -55,9 +56,13 @@ const Products = () => {
 
       {/* BUTTONS */}
       <div className="mt-10 flex justify-center gap-6">
-        <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-['Dinosaur']">Learn More</button>
-        <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-['Dinosaur']">Where To Buy</button>
-      </div>
+        <Link to={'/learn-more'} onClick={() => window.scrollTo(0,0)}>
+          <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-['Dinosaur']">Learn More</button>
+        </Link>
+        <Link to={'/buy'} onClick={() => window.scrollTo(0,0)}>
+          <button className="px-6 py-3 bg-[#FFD715] shadow-lg hover:scale-105 hover:bg-[#FFD714] transition-transform font-['Dinosaur']">Where To Buy</button>
+        </Link>
+     </div>
 
     </section>
   )

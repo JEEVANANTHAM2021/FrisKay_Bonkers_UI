@@ -37,6 +37,11 @@ import email_icon from './icons/arroba.png'
 import whatsapp_icon from './icons/whatsapp.png'
 import instagram_icon from './icons/instagram.png'
 import site_logo from './images/animal.png'
+import barkery_prod2 from './images/barkery_prod2.webp'
+import barkery_prod3 from './images/barkery_prod3.webp'
+import surprise_prod from './images/surprise_prod.webp'
+import zoomers_prod2 from './images/zoomers_prod2.webp'
+import bbq_prod2 from './images/bbq_prod2.webp'
 
 
 
@@ -87,7 +92,12 @@ export const assets = {
     email_icon,
     instagram_icon,
     whatsapp_icon,
-    site_logo
+    site_logo,
+    zoomers_prod2,
+    barkery_prod2,
+    barkery_prod3,
+    bbq_prod2,
+    surprise_prod
 }
 
 export const tikVideos = {

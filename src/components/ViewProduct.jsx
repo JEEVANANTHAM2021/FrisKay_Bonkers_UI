@@ -1,13 +1,18 @@
 import React, { useState, useEffect, useRef, useCallback } from "react"
 import Textation from "./Textation"
 import { assets } from "../assets/assets"
+import PexelsVideo from "./PexelsVideo"
 
 const ViewProduct = () => {
   const data = [
-    { src: assets.barkery_prod, title: "Barkery-Bonkers", desc: "Big Meaty Taste" },
+    { src: assets.barkery_prod,title: "Barkery-Bonkers", desc: "Big Meaty Taste" },
+    { src: assets.barkery_prod2,title: "Barkery-Bonkers", desc: "Big Meaty Taste Medium" },
+    { src: assets.barkery_prod3,title: "Barkery-Bonkers", desc: "Big Meaty Taste Small" },
     { src: assets.bbq_prod, title: "Steak-Cuts", desc: "Grill inspired Meat Treats" },
+    { src: assets.bbq_prod2, title: "Steak-Cuts", desc: "Grill inspired Meat Treats" },
     { src: assets.catbites_prod, title: "Salmon Supreme", desc: "Crunchy, Gooey Snacky Snacks" },
     { src: assets.zoomers_prod, title: "BBQ Beef", desc: "Soft & Chewy Snacky Snacks" },
+    { src: assets.zoomers_prod2, title: "BBQ Beef", desc: "Soft & Chewy Snacky Snacks" },
     { src: assets.purrpops_prod, title: "Tip Top Tuna", desc: "100% Freeze-Dried Meat Treats" },
     { src: assets.mixx_prod, title: "Tasty Tuna", desc: "Creamy Meat Treats" },
     { src: assets.dogbites_prod, title: "Bacon Bitties", desc: "Crunchy, Gooey Snacky Snacks" },
@@ -102,7 +107,7 @@ const ViewProduct = () => {
               <img
                 src={item.src}
                 alt={item.title}
-                className="w-60 h-full flex items-center object-cover rounded-lg cursor-pointer 
+                className="w-1/3 h-full flex items-center object-cover rounded-lg cursor-pointer 
                 hover:animate-[tilt-shake_0.3s_linear_infinite]"
                 draggable={false}
               />
@@ -124,6 +129,11 @@ const ViewProduct = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* -------------- Pexel Videos --------------- */}
+      <div className="mt-2">
+        <PexelsVideo />
       </div>
 
       {/* ---------- TEXTATION ---------- */}
