@@ -45,8 +45,8 @@ const ReviewPage = () => {
       </div>
 
       {/* Review Box Area */}
-      <div className="min-h-screen bg-[#FFEBC3] flex justify-center py-8 px-3 sm:px-6">
-        <div className="bg-white shadow-2xl rounded-2xl p-4 sm:p-6 md:p-12 w-full max-w-6xl">
+      <div className="min-h-auto bg-[#FFEBC3] flex justify-center py-6 px-3 sm:px-6">
+        <div className="bg-white shadow-2xl rounded-2xl p-10 sm:p-8 md:p-12 w-full max-w-6xl">
           <h1 className="text-2xl sm:text-3xl font-['Dinosaur'] text-center mb-6">
             Customer Review
           </h1>
