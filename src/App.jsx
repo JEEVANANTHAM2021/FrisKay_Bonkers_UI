@@ -7,6 +7,8 @@ import FaqData from './pages/FaqData'
 import OurTreats from './pages/OurTreats'
 import Profile from './pages/Profile'
 import LearnMore from './pages/LearnMore'
+import ReviewPage from './pages/ReviewPage'
+import GetBonkers from './pages/GetBonkers'
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path="/profile" element={<Profile />} />
         <Route path='/learn-more' element={<LearnMore />} />
+        <Route path='/review' element={<ReviewPage />} />
+        <Route path='/get-bonkers' element={<GetBonkers />} />
       </Routes>
     </div>
   )

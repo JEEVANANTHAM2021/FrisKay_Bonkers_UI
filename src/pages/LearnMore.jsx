@@ -9,6 +9,7 @@ import Card from "../components/Card";
 import Textation from "../components/Textation";
 import { assets } from "../assets/assets";
 import ViewProduct from "../components/ViewProduct";
+import { Link } from "react-router-dom";
 
 const prodInfos = [
   {
@@ -34,7 +35,6 @@ const prodInfos = [
   {
     q: "FEEDING INSTRUCTIONS",
     type: "feeding",
-
     table: {
       col1: "Adult Dog Weight (kg)",
       col2: "Pieces / Day",
@@ -44,17 +44,14 @@ const prodInfos = [
         { c1: "6 Kg", c2: "16" }
       ]
     },
-
     note1:
       "Daily feeding can vary according to pet's lifestyle, temperament and activity.",
-
     ticks: [
       "Ensure your pet has access to fresh water",
       "Store in a cool, dry place.",
       "Always provide regular veterinary care",
       "BONKERS dog treats are intended for intermittent or supplemental feeding only"
     ],
-
     note2: "Treats should only make up 10% of a dog's diet."
   }
 ];
@@ -69,49 +66,36 @@ const LearnMore = () => {
       </div>
 
 {/* Main */}
-      <div className="bg-[#FFEBC3] text-sm lg:text-lg font-['rooneySansRegular'] py-4 md:py-6">
+      <div className="bg-[#FFEBC3] text-sm lg:text-lg font-['rooneySansRegular'] md:py-6 px-4 md:px-8 lg:px-16 py-4">
 
         {/* ==== GRID CONTAINER (EQUAL HEIGHT COLUMNS) ==== */}
-        <div className="
-          grid grid-cols-1 lg:grid-cols-2
-          w-full gap-6 md:gap-8
-          border border-gray-200
-          rounded-3xl shadow-lg
-          bg-white
-          p-4 md:p-6 lg:p-8
-          mx-auto max-w-6xl
-        ">
+        <div className="flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-6 md:p-6 mx-auto">
 
           {/* LEFT SIDE */}
-          <div className="w-full h-full flex flex-col">
-            <Card>
+          <div className="flex-row gap-4">
+            <div>
               <img className="w-full rounded-3xl object-cover" src={img_1} alt="" />
-            </Card>
-
+            </div>
             <div className="flex gap-3 md:gap-4 mt-3 md:mt-4 flex-col sm:flex-row">
-              <Card>
-                <img className="rounded-3xl w-full object-cover" src={img_2} alt="" />
-              </Card>
+                <img className="rounded-3xl w-full md:w-1/2 object-cover" src={img_2} alt="" />
 
-              <Card>
-                <img className="rounded-3xl w-full object-cover" src={img_3} alt="" />
-              </Card>
+                <img className="rounded-3xl w-full md:w-1/2 object-cover" src={img_3} alt="" />
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="w-full h-full flex flex-col space-y-3 md:space-y-4">
+          <div className="w-full h-full flex flex-col gap-6 space-y-3 md:space-y-4">
             <div>
               <h3 className="font-[Dinosaur] text-[#FFEBC3] text-xl sm:text-2xl">
                 BONKERS BBQ
               </h3>
 
               <p className="font-['FatFrank'] text-3xl sm:text-4xl lg:text-7xl leading-none text-[#FFEBC3]">
-                BURGER <span className="block leading-none">PATTIES</span>
+                BURGER <span className="flex-col sm:flex-row leading-none">PATTIES</span>
               </p>
             </div>
 
-            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base font-['rooneySansRegular'] text-justify leading-relaxed">
               Fire up the grill and let the BONKERS BBQ begin! Inspired by the same
               mouthwatering morsels you'd find sizzling on your own grill, these dog
               treats are packed full of real meaty flavor that'll have your dog doing
@@ -120,7 +104,7 @@ const LearnMore = () => {
             </p>
 
             {/* PROD Infos */}
-            <div className="mt-2">
+            <div className="mt-2 space-y-4">
               {prodInfos.map((item, i) => (
                 <div key={i} className="border-b">
 
@@ -128,10 +112,10 @@ const LearnMore = () => {
                     onClick={() => setOpenIndex(openIndex === i ? null : i)}
                     className="w-full flex justify-between items-center py-3 px-2 md:px-4 text-left"
                   >
-                    <h3 className="font-[Dinosaur] text-base sm:text-lg">
+                    <h3 className="font-['Dinosaur'] text-base sm:text-lg">
                       {item.q}
                     </h3>
-                    <span className="text-2xl font-bold">
+                    <span className="text-2xl font-['rooneySansRegular']">
                       {openIndex === i ? "−" : "+"}
                     </span>
                   </button>
@@ -153,8 +137,8 @@ const LearnMore = () => {
 
                       {item.type === "feeding" && (
                         <>
-                          <table className="w-full border rounded-lg overflow-hidden">
-                            <thead className="bg-gray-100">
+                          <table className="w-full border overflow-hidden ">
+                            <thead>
                               <tr>
                                 <th className="p-2 text-left">{item.table.col1}</th>
                                 <th className="p-2 text-left">{item.table.col2}</th>
@@ -171,18 +155,18 @@ const LearnMore = () => {
                             </tbody>
                           </table>
 
-                          <p className="mt-3">{item.note1}</p>
+                          <p className="mt-3 text-gray-400 font-['rooneySansRegular']">{item.note1}</p>
 
                           <ul className="mt-4 space-y-2">
                             {item.ticks.map((t, index) => (
-                              <li key={index} className="flex items-start gap-2">
-                                <span className="">✓</span>
+                              <li key={index} className="flex items-start gap-2 font-['rooneySansRegular']">
+                                <span className="text-black">✓</span>
                                 <span>{t}</span>
                               </li>
                             ))}
                           </ul>
 
-                          <p className="mt-4 font-semibold">{item.note2}</p>
+                          <p className="mt-4 font-bold text-lg font-['rooneySansRegular']">{item.note2}</p>
                         </>
                       )}
                     </div>
@@ -192,20 +176,21 @@ const LearnMore = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2">
-              <button className="px-4 py-3 bg-[#FFD715] rounded-md font-semibold w-full sm:w-auto">
-                Where to Buy
-              </button>
+            <div className="flex flex-row gap-6 justify-around items-end md:gap-4 pt-2">
+             <Link to={'/buy'} onClick={() => window.scrollTo(0,0)}><button className="px-2 py-1 md:px-4 md:py-3 bg-[#FFD715] rounded-md font-['Dinosaur']">
+                      Where to Buy
+                    </button>
+              </Link>
 
-              <button className="px-4 py-3 bg-[#FFD715] rounded-md font-semibold w-full sm:w-auto">
+             <Link to={'/review'} onClick={() => window.scrollTo(0,0)}><button className="px-2 py-1 md:px-4 md:py-3 bg-[#FFD715] rounded-md font-['Dinosaur']">
                 Leave a Review
-              </button>
+              </button></Link> 
             </div>
           </div>
         </div>
       </div>
 
-      {/* Text Running */}
+{/* Text Running */}
       <Textation children className="font-['Dinosaur'] bg-[#FFD715] shadow-lg py-3 whitespace-nowrap">
         <span className="mx-8">YUMMO</span>
         <span className="mx-8">MULTI-AWARD WINNING</span>
@@ -222,17 +207,10 @@ const LearnMore = () => {
         <span className="mx-8">VIRAL TIK-TOK TREAT</span>
       </Textation>
 
-      {/* Banner */}
-      <div
-        className="
-          m-4 rounded-3xl shadow-md
-          flex flex-col justify-center items-center text-center
-          min-h-20 sm:min-h-20 md:min-h-60
-          p-6 sm:p-10 md:p-14
-          bg-cover bg-center bg-no-repeat
-        "
-        style={{ backgroundImage: `url(${review_bg})` }}
-      >
+{/* Banner */}
+      <div className="m-4 rounded-3xl shadow-md flex flex-col justify-center items-center text-center
+            min-h-20 sm:min-h-20 md:min-h-60 p-6 sm:p-10 md:p-14 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${review_bg})` }}>
         <h3 className="px-4 py-2 rounded-sm bg-[#FFD715] text-sm font-['Dinosaur'] rotate-4 translate-y-6">
           BBQ FAVE!
         </h3>
@@ -246,7 +224,7 @@ const LearnMore = () => {
         </div>
       </div>
 
-      {/* Store Logos */}
+{/* Store Logos */}
       <div className="mt-10 overflow-hidden">
         <Textation className="bg-white rounded-2xl shadow-xl flex items-center gap-8 md:gap-14 p-4 w-max whitespace-nowrap animate-[ticker-ltr_12s_linear_infinite]">
           {[
@@ -256,8 +234,7 @@ const LearnMore = () => {
           ].map((img, i) => (
             <img key={i} src={img} className="h-8 sm:h-10 md:h-12 object-contain"/>
           ))}
-
-          {/* Duplicates for loops */}
+      {/* Duplicates for loops */}
           {[
             assets.amazon_img, assets.chewy_img, assets.cvs_img,
             assets.meijer_img, assets.petco_img, assets.petsmart_img,
@@ -268,11 +245,12 @@ const LearnMore = () => {
         </Textation>
       </div>
 
-      {/* View Products */}
+{/* View Products */}
       <div className="mt-12">
         <ViewProduct />
       </div>
 
+{/* Footer */}
       <Footer />
     </section>
   );

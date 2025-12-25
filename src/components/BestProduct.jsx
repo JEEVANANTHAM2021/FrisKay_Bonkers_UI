@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import { assets } from '../assets/assets'
 import Textation from './Textation'
+import { Link } from 'react-router-dom'
 
 const BestProduct = () => {
 
@@ -26,7 +27,7 @@ const BestProduct = () => {
         {/* -------- Product Cards ---------- */}
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
           {/* Card 1 */}
-          <Card className="w-full sm:w-80 cursor-pointer overflow-hidden group">
+        <Card className="w-full sm:w-80 cursor-pointer overflow-hidden group">
             <div className="overflow-hidden rounded-3xl">
               <img
                 className="w-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -35,14 +36,16 @@ const BestProduct = () => {
               />
             </div>
 
-            <div className="flex items-center justify-between bg-amber-400 p-6 md:p-4 transition-transform duration-500 group-hover:scale-105">
-              <h3 className="font-['Dinosaur']">Our Treats</h3>
-              <img className="w-5" src={assets.right_arrow} alt="right_arrow" />
-            </div>
-          </Card>
+            <Link to={'/treats'} onClick={() => window.scrollTo(0,0)}>
+              <div className="flex items-center justify-around bg-amber-400 p-6 md:p-4 transition-transform duration-500 group-hover:scale-105">
+                <button className="font-['Dinosaur'] cursor-pointer">Our Treats</button>
+                <img className="w-5" src={assets.right_arrow} alt="right_arrow" />
+              </div>
+            </Link>
+        </Card>
 
           {/* Card 2 */}
-          <Card className="w-full sm:w-80 cursor-pointer overflow-hidden group">
+        <Card className="w-full sm:w-80 cursor-pointer overflow-hidden group">
             <div className="overflow-hidden rounded-3xl">
               <img
                 className="w-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -51,11 +54,13 @@ const BestProduct = () => {
               />
             </div>
 
-            <div className="flex items-center justify-between bg-amber-400 p-6 md:p-4 transition-transform duration-500 group-hover:scale-105">
-              <h3 className="font-['Dinosaur']">Where to Buy</h3>
-              <img className="w-5" src={assets.right_arrow} alt="right_arrow" />
-            </div>
-          </Card>
+          <Link to={'/buy'} onClick={() => window.scrollTo(0,0)}>
+              <div className="flex items-center justify-around bg-amber-400 p-6 md:p-4 transition-transform duration-500 group-hover:scale-105">
+                <button className="font-['Dinosaur'] cursor-pointer">Where to Buy</button>
+                <img className="w-5" src={assets.right_arrow} alt="right_arrow" />
+              </div>
+          </Link>
+        </Card>
         </div>
       </div>
 

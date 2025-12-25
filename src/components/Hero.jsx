@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -18,9 +19,10 @@ const Hero = () => {
           only the finest ingredients. <br />Made with love from the
           heart of Mississippi.
         </p>
-        <button className="mt-6 px-6 py-4 text-lg sm:text-xl font-['Dinosaur'] rounded shadow-lg bg-amber-500 hover:bg-amber-300 transition cursor-pointer">
-          Get Bonkers
-        </button>
+        <Link to={'/get-bonkers'} onClick={() => window.scrollTo(0,0)}><button className="mt-6 px-6 py-4 text-lg sm:text-xl font-['Dinosaur'] rounded shadow-lg bg-amber-500 hover:bg-amber-300 transition cursor-pointer">
+                Get Bonkers
+              </button>
+        </Link>
       </div>
 
       {/* ------- Right Side Image ------- */}
