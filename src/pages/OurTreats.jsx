@@ -27,14 +27,14 @@ const OurTreats = () => {
               </p>
             </h3>
             
-            <p className="font-['RooneySansRegular'] text-sm sm:text-base lg:text-lg text-gray-900 leading-relaxed">
+            <p className="font-['RooneySansRegular'] text-justify text-sm sm:text-base lg:text-lg text-gray-900 leading-relaxed">
               Pets make life better. And they are absolutely BONKERS. Wag-first,
               zoomie-powered, snack-obsessed little weirdos - and we love them
               for it. We make snacks that celebrate the weird and wonderful joy
               of pets. Whiffy-good, tail-wagging, purr-powered treats made to
               drive your pet absolutely BONKERS (in the best way)! Carefully
-              crafted, delightfully unhinged, and loved by pets and their people
-              everywhere 🤪
+              crafted, delightfully unhinged, and loved by pets and 
+              their people everywhere 🤪
             </p>
           </div>
 

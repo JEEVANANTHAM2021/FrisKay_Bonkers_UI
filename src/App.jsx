@@ -9,6 +9,7 @@ import Profile from './pages/Profile'
 import LearnMore from './pages/LearnMore'
 import ReviewPage from './pages/ReviewPage'
 import GetBonkers from './pages/GetBonkers'
+import ProductsView from './pages/ProductsView'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/learn-more' element={<LearnMore />} />
         <Route path='/review' element={<ReviewPage />} />
         <Route path='/get-bonkers' element={<GetBonkers />} />
+        <Route path='/products-view' element={<ProductsView />} />
       </Routes>
     </div>
   )

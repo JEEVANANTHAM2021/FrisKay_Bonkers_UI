@@ -15,7 +15,7 @@ const BestProduct = () => {
           WHIFFY GOOD SNACKY SNACKS
         </h3>
 
-        <p className="font-['RooneySansRegular'] text-sm text-start sm:text-base lg:text-lg font-normal text-gray-900">
+        <p className="font-['RooneySansRegular'] justify-around text-sm text-start sm:text-base lg:text-lg font-normal text-gray-900">
         Pets make life better. And they are absolutely BONKERS. Wag-first, 
         zoomie-powered, snack-obsessed little weirdos - and we love them for it. 
         We make snacks that celebrate the weird and wonderful joy of 

@@ -57,7 +57,7 @@ const Contact = () => {
             GET IN TOUCH
             </h3>
 
-            <p className="font-['RooneySansRegular'] text-sm text-start sm:text-base lg:text-lg font-normal text-gray-900">
+            <p className="font-['RooneySansRegular'] text-sm text-justify sm:text-base lg:text-lg text-gray-900">
             If you’ve got snacks on the brain and want to drop us a line, 
             (or have a pet meme you want to share) we’d love to hear from you.
             </p>
