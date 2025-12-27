@@ -42,6 +42,7 @@ import barkery_prod3 from './images/barkery_prod3.webp'
 import surprise_prod from './images/surprise_prod.webp'
 import zoomers_prod2 from './images/zoomers_prod2.webp'
 import bbq_prod2 from './images/bbq_prod2.webp'
+import load_img from './images/load_img.png'
 
 
 
@@ -97,7 +98,8 @@ export const assets = {
     barkery_prod2,
     barkery_prod3,
     bbq_prod2,
-    surprise_prod
+    surprise_prod,
+    load_img
 }
 
 export const tikVideos = {
