@@ -1,8 +1,8 @@
 import React from 'react'
 import AllProducts from '../components/AllProducts'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import Textation from '../components/Textation'
+import FooterReveal from '../components/FooterReveal'
 
 const ProductsView = () => {
   return (
@@ -31,7 +31,7 @@ const ProductsView = () => {
       </Textation>
 {/*--------- Footer ----------*/}
       <div>
-        <Footer />
+        <FooterReveal />
       </div>
     </section>
   )

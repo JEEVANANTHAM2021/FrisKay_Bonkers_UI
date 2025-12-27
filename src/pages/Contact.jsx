@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import { assets } from '../assets/assets'
 import Textation from '../components/Textation'
 import { useState } from 'react'
 import PexelsVideo from '../components/PexelsVideo'
+import FooterReveal from '../components/FooterReveal'
 
 const enquiryFields = {
   general: [
@@ -148,7 +148,7 @@ const Contact = () => {
       </div>
 
      {/* --------- Textation Motion ---------- */}
-    <Textation className="font-['Dinosaur'] bg-[#FFD715]">
+    <Textation className="font-['Dinosaur'] bg-[#FFD715] py-2 md:py-4">
        <span className="mx-8"> YUMMO</span>
         <span className="mx-8"> MULTI-AWARD WINNING</span>
         <span className="mx-8"> OVER 15000 FIVE STAR REVIEWS</span>
@@ -165,7 +165,7 @@ const Contact = () => {
     </Textation>
 
 {/*----------- Footer ---------------- */}
-      <Footer />
+      <FooterReveal />
     </section>
   )
 }

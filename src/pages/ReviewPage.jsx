@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { products } from "../data/data";  
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import PexelsVideo from "../components/PexelsVideo";
 import Textation from "../components/Textation";
 import { assets } from "../assets/assets";
+import FooterReveal from "../components/FooterReveal";
 
 const ReviewPage = () => {
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -150,7 +150,7 @@ const ReviewPage = () => {
       </div>
 
       {/* Footer */}
-      <Footer />
+      <FooterReveal />
     </section>
   );
 };

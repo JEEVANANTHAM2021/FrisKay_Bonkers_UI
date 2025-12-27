@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Textation from "../components/Textation";
 import PexelsVideo from "../components/PexelsVideo";
 import { assets } from "../assets/assets";
 import AllProducts from "../components/AllProducts";
+import FooterReveal from "../components/FooterReveal";
 
 const OurTreats = () => {
   return (
@@ -139,7 +139,7 @@ const OurTreats = () => {
       </Textation>
 
       {/* Footer */}
-      <Footer />
+      <FooterReveal />
     </section>
   );
 };

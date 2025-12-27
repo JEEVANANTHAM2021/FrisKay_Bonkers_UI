@@ -2,12 +2,11 @@ import React, { useState, useEffect, useMemo } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Textation from "../components/Textation";
 import CatImages from "../components/CatImages";
 import { assets } from "../assets/assets";
+import FooterReveal from "../components/FooterReveal";
 
 /* ---------- Leaflet Marker Fix ---------- */
 const defaultIcon = new L.Icon({
@@ -233,7 +232,7 @@ const WhereToBuy = () => {
       </Textation>
 
 {/*---------------- Footer ------------- */}
-      <Footer />
+      <FooterReveal />
 {/*---------------- Footer ------------- */}
     </section>
   );

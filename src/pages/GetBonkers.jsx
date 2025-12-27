@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import Textation from '../components/Textation'
 import CatImages from '../components/CatImages'
 import ViewProduct from '../components/ViewProduct'
 import Products from '../components/Products'
 import { assets } from '../assets/assets'
+import FooterReveal from '../components/FooterReveal'
 
 const GetBonkers = () => {
   return (
@@ -76,7 +76,7 @@ const GetBonkers = () => {
       </div>
 {/*--------- Footer ---------------- */}
       <div>
-        <Footer />
+        <FooterReveal />
       </div>
     </section>
   )

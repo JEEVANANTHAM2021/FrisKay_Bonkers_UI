@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import img_1 from "../assets/images/learnMain_img.webp";
 import img_2 from "../assets/images/learnPage_img.webp";
 import img_3 from "../assets/images/learnPage_img2.webp";
 import review_bg from '../assets/images/review-background.webp'
-import Card from "../components/Card";
 import Textation from "../components/Textation";
 import { assets } from "../assets/assets";
 import ViewProduct from "../components/ViewProduct";
 import { Link } from "react-router-dom";
+import FooterReveal from "../components/FooterReveal";
 
 const prodInfos = [
   {
@@ -251,7 +250,7 @@ const LearnMore = () => {
       </div>
 
 {/* Footer */}
-      <Footer />
+      <FooterReveal />
     </section>
   );
 };

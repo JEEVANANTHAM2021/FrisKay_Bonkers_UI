@@ -1,9 +1,9 @@
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import PexelsVideo from '../components/PexelsVideo'
 import { useState } from 'react'
 import { assets } from '../assets/assets'
 import Textation from '../components/Textation'
+import FooterReveal from '../components/FooterReveal'
 
 const faq = [
     {
@@ -265,7 +265,7 @@ const FaqData = () => {
 
 {/*---------- Footer ----------------- */}
       <div>
-        <Footer />
+        <FooterReveal />
       </div>
     </section>
   )
