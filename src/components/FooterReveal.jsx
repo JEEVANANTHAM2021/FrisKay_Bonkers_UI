@@ -25,7 +25,7 @@ const FooterReveal = () => {
 
   return (
     <>
-      <div ref={triggerRef} className="h-[45vh]" />
+      <div ref={triggerRef} className="h-[35vh] md:h-[45vh]" />
 
       <div
         ref={footerRef}
