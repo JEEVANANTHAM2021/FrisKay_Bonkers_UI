@@ -2,8 +2,10 @@ import React, { useState, useEffect, useRef, useCallback } from "react"
 import Textation from "./Textation"
 import { assets } from "../assets/assets"
 import PexelsVideo from "./PexelsVideo"
+import { useCart } from "../context/Context"
 
-const ViewProduct = () => {
+const ViewProduct = ({ product }) => {
+  const { addToCart } = useCart();
   const data = [
     { src: assets.barkery_prod,title: "Barkery-Bonkers", desc: "Big Meaty Taste" },
     { src: assets.barkery_prod2,title: "Barkery-Bonkers", desc: "Big Meaty Taste Medium" },
@@ -123,8 +125,8 @@ const ViewProduct = () => {
               </p>
 
               {/* BUTTON */}
-              <button className="mt-5 px-6 py-2 font-['Dinosaur'] bg-black text-white rounded-full hover:bg-gray-800 transition">
-                Shop Now
+              <button onClick={addToCart} className="mt-5 px-6 py-2 font-['Dinosaur'] bg-black text-white rounded-full hover:bg-gray-800 transition">
+                Add To Cart
               </button>
             </div>
           ))}

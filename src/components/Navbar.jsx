@@ -2,10 +2,12 @@ import React, { useState, useEffect, useRef } from 'react'
 import { assets } from '../assets/assets'
 import { Link } from 'react-router-dom'
 import UserProfile from './UserProfile'
+import { useCart } from '../context/Context'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const sideRef = useRef(null);
+    const { cartCount } = useCart();
     
     useEffect(() => {
       const handler = (e) => {
@@ -45,7 +47,15 @@ const Navbar = () => {
 
       {/* ------------ Right Side ------------ */}
       <div className="flex items-center gap-3" ref={sideRef}>
+        {/* Cart - Setup */}
+        <div className="relative">
         <img className="w-8 md:w-9 cursor-pointer" src={assets.cart_icon} alt="cart_icon"/>
+          {cartCount > 0 && (
+          <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs w-5 h-5 flex justify-center items-center rounded-full">
+            {cartCount}
+          </span>
+          )}
+        </div>
 
         {/*Profile - Menu*/}
         <UserProfile />
