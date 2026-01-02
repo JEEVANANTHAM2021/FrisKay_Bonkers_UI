@@ -11,6 +11,7 @@ import LearnMore from "./pages/LearnMore";
 import ReviewPage from "./pages/ReviewPage";
 import GetBonkers from "./pages/GetBonkers";
 import ProductsView from "./pages/ProductsView";
+import Orders from "./pages/Order";
 
 const App = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/review" element={<PageTransition><ReviewPage /></PageTransition>} />
         <Route path="/get-bonkers" element={<PageTransition><GetBonkers /></PageTransition>} />
         <Route path="/products-view" element={<PageTransition><ProductsView /></PageTransition>} />
+        <Route path="/orders" element={<PageTransition><Orders /></PageTransition>} />
       </Routes>
     </div>
   );

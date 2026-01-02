@@ -67,7 +67,7 @@ const LearnMore = () => {
 {/* Main */}
       <div className="bg-[#FFEBC3] text-sm lg:text-lg font-['rooneySansRegular'] md:py-6 px-4 md:px-8 lg:px-16 py-4">
 
-        {/* ==== GRID CONTAINER (EQUAL HEIGHT COLUMNS) ==== */}
+        {/* ----------- GRID CONTAINER -------- */}
         <div className="flex flex-col gap-8 lg:flex-row border border-gray-100 rounded-4xl shadow-md bg-white p-6 md:p-6 mx-auto">
 
           {/* LEFT SIDE */}
