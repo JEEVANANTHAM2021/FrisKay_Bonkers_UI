@@ -3,9 +3,16 @@ import Textation from "./Textation"
 import { assets } from "../assets/assets"
 import PexelsVideo from "./PexelsVideo"
 import { useCart } from "../context/Context"
+import { toast } from "react-toastify"
 
 const ViewProduct = ({ product }) => {
   const { addToCart } = useCart();
+
+  const handleAdd = () => {
+    addToCart();
+    toast.success("Added to Cart");
+  };
+
   const data = [
     { src: assets.barkery_prod,title: "Barkery-Bonkers", desc: "Big Meaty Taste" },
     { src: assets.barkery_prod2,title: "Barkery-Bonkers", desc: "Big Meaty Taste Medium" },
@@ -125,7 +132,7 @@ const ViewProduct = ({ product }) => {
               </p>
 
               {/* BUTTON */}
-              <button onClick={addToCart} className="mt-5 px-6 py-2 font-['Dinosaur'] bg-black text-white rounded-full hover:bg-gray-800 transition">
+              <button onClick={handleAdd} className="mt-5 px-6 py-2 font-['Dinosaur'] bg-black text-white rounded-full hover:bg-gray-800 transition">
                 Add To Cart
               </button>
             </div>

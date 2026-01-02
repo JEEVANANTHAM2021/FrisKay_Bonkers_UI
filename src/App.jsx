@@ -12,6 +12,8 @@ import ReviewPage from "./pages/ReviewPage";
 import GetBonkers from "./pages/GetBonkers";
 import ProductsView from "./pages/ProductsView";
 import Orders from "./pages/Order";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const location = useLocation();
@@ -31,6 +33,7 @@ const App = () => {
         <Route path="/products-view" element={<PageTransition><ProductsView /></PageTransition>} />
         <Route path="/orders" element={<PageTransition><Orders /></PageTransition>} />
       </Routes>
+      <ToastContainer position="top-center" autoClose={1500} />
     </div>
   );
 };
